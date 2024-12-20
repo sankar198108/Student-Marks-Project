@@ -1,0 +1,11 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore build directories and environment files
+build/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+

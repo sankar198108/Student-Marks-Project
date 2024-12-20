@@ -1,0 +1,159 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.college-logo {
+  margin-top: 10px;
+  width: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+/* Form Styles */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.student-form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.submit-button,
+.print-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  width: 100%;
+  max-width: 150px;
+}
+
+.submit-button:hover,
+.print-button:hover {
+  background-color: #45a049;
+}
+
+/* Result Styles */
+.result {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  overflow: auto; /* Allows scrolling if content overflows */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.result h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.result th, 
+.result td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.result th {
+  background-color: #f4f4f4;
+}
+
+.result .scroll-container {
+  overflow-x: auto;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .college-logo {
+    width: 80px;
+  }
+
+  .result table {
+    font-size: 12px;
+  }
+
+  .input-field,
+  .submit-button,
+  .print-button {
+    width: 100%;
+    max-width: none;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .result table {
+    font-size: 10px;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  .result h3 {
+    font-size: 16px;
+  }
+}
